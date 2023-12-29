@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.css'/>
+    <style>
+      body{
+        height: 100%;
+      }
+
+      #particles-js{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* 因為動畫通常會用在絕對、固定定位，會蓋住下方連結或按鈕，對動畫使用 pointer-events: none; 可以穿透點選底下的連結、按鈕 */
+        /* 穿透，可以點到下面的東西 */
+        pointer-events: none;
+      }
+    </style>
+</head>
+<body class="bg-dark">
+  <!-- 3.設定結構 -->
+  <div id="particles-js" class=""></div>
+  <a href="https://www.google.com.tw/?hl=zh_TW">GOOGLE</a>
+  <!-- 1.使用主程式 -->
+  <script src="./particles.min.js"></script>
+  <!-- 2.套用設定檔 -->
+  <script src="./app.js"></script>
+</body>
+</html>
